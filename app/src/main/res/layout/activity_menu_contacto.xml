@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuContacto">
+
+    <include android:id="@+id/miActionBar" layout="@layout/actionbar"></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mi Gmail"
+        android:id="@+id/miEmail"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/miActionBar"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/tiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tiNombre"
+        android:layout_below="@+id/miEmail"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/tiEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tiEmail"
+        android:layout_below="@+id/tiNombre"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/tiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tiPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/tiEmail"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/tiMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tiMensaje"
+        android:layout_below="@+id/tiPassword"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enviarBoton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

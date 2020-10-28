@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="muustack.com.mascotasgram.MainActivity">
+
+        <item
+            android:id="@+id/menuContacto"
+            android:title="@string/menuContacto"
+            android:orderInCategory="100">
+        </item>
+        <item
+            android:id="@+id/menuAcerca"
+            android:title="@string/menuAcerca"
+            android:orderInCategory="110">
+        </item>
+
+        <item
+            android:id="@+id/menuActionFavorito"
+            android:icon="@drawable/strella"
+            android:orderInCategory="300"
+            app:showAsAction="always"
+            android:title="Favoritos"
+            />
+
+</menu>
